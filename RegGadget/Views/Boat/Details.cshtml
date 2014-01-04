@@ -1,0 +1,178 @@
+﻿@model RegGadget.Models.Boat
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Boat</h4>
+    	<hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.OwnerId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.OwnerId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SailNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SailNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.AltSailNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.AltSailNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.BowNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.BowNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HullNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HullNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Manufacturer)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Manufacturer)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Model)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Model)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HullColor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HullColor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Year)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Year)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageData)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ImageData)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PHRFRating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PHRFRating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IRCRating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IRCRating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NFSRating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NFSRating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.OtherRating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.OtherRating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Length)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Length)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Draft)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Draft)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Displacement)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Displacement)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.OneDesign)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.OneDesign)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

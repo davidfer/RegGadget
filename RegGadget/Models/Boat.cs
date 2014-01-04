@@ -7,6 +7,7 @@ using System.Drawing;
 namespace RegGadget.Models
 {
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Boat
     {
@@ -25,7 +26,8 @@ namespace RegGadget.Models
         public string Model { get; set; }
         public string HullColor { get; set; }
         public int Year { get; set; }
-        public Bitmap Image { get; set; }
+        // BUGBUG: I'd really like ImageData to be a Bitmap rather than just a byte[] but the model creation helper complains that Bitmap has no key defined
+        public byte[] ImageData { get; set; }
         public int PHRFRating { get; set; }
         public int IRCRating { get; set; }
         public int NFSRating { get; set; } // No flying sails, typically PHRF + 13
