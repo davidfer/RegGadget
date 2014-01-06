@@ -28,9 +28,9 @@ namespace RegGadget
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "629619407079808",
+               appSecret: "0824064002e20edeb2263602d6354636");
 
             //app.UseGoogleAuthentication();
         }

@@ -16,8 +16,8 @@ namespace RegGadget.Models
         public string MiddleName { get; set; }
         [Required]
         public string LastName { get; set; }
-        public int Height { get; set; }
-        public int Weight { get; set; }
+        public int? Height { get; set; }
+        public int? Weight { get; set; }
         public string PhoneNo { get; set; }
         public string Email { get; set; }
         public string Addr1 { get; set; }

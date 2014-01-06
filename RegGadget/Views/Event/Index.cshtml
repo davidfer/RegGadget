@@ -1,0 +1,107 @@
+﻿@model IEnumerable<RegGadget.Models.PublicEvent>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EventName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EventVenue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EventHost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EventUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NORUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SIUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LateRegDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LateRegPenaltyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LateRegPenaltyValue)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventVenue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventHost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NORUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SIUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LateRegDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LateRegPenaltyType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LateRegPenaltyValue)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

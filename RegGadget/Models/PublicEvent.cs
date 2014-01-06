@@ -23,6 +23,6 @@ namespace RegGadget.Models
         public DateTime EndDate { get; set; }
         public DateTime LateRegDate { get; set; }
         public string LateRegPenaltyType { get; set; }
-        public int LateRegPenaltyValue { get; set; }
+        public int? LateRegPenaltyValue { get; set; }
     }
 }

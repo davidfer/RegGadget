@@ -13,7 +13,6 @@ namespace RegGadget.Models
     {
         [Key]
         public int Id { get; set; }
-
         [Required]
         public string Name { get; set; }
         [Required]
@@ -25,16 +24,16 @@ namespace RegGadget.Models
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public string HullColor { get; set; }
-        public int Year { get; set; }
+        public int? Year { get; set; }
         // BUGBUG: I'd really like ImageData to be a Bitmap rather than just a byte[] but the model creation helper complains that Bitmap has no key defined
         public byte[] ImageData { get; set; }
-        public int PHRFRating { get; set; }
-        public int IRCRating { get; set; }
-        public int NFSRating { get; set; } // No flying sails, typically PHRF + 13
-        public int OtherRating { get; set; }
-        public int Length { get; set; }
-        public int Draft { get; set; }
-        public int Displacement { get; set; }
-        public bool OneDesign { get; set; } // True if this boat is part of a one design class}
+        public int? PHRFRating { get; set; }
+        public int? IRCRating { get; set; }
+        public int? NFSRating { get; set; } // No flying sails, typically PHRF + 13
+        public int? OtherRating { get; set; }
+        public int? Length { get; set; }
+        public int? Draft { get; set; }
+        public int? Displacement { get; set; }
+        public bool? OneDesign { get; set; } // True if this boat is part of a one design class
     }
 }

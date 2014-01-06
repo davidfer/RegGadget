@@ -1,0 +1,136 @@
+﻿@model RegGadget.Models.PublicEvent
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <h4>PublicEvent</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EventName, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EventName)
+                    @Html.ValidationMessageFor(model => model.EventName)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EventVenue, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EventVenue)
+                    @Html.ValidationMessageFor(model => model.EventVenue)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EventHost, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EventHost)
+                    @Html.ValidationMessageFor(model => model.EventHost)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EventUrl, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EventUrl)
+                    @Html.ValidationMessageFor(model => model.EventUrl)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.RegUrl, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.RegUrl)
+                    @Html.ValidationMessageFor(model => model.RegUrl)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.NORUrl, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.NORUrl)
+                    @Html.ValidationMessageFor(model => model.NORUrl)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.SIUrl, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.SIUrl)
+                    @Html.ValidationMessageFor(model => model.SIUrl)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.StartDate, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.StartDate)
+                    @Html.ValidationMessageFor(model => model.StartDate)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EndDate, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EndDate)
+                    @Html.ValidationMessageFor(model => model.EndDate)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.LateRegDate, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LateRegDate)
+                    @Html.ValidationMessageFor(model => model.LateRegDate)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.LateRegPenaltyType, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LateRegPenaltyType)
+                    @Html.ValidationMessageFor(model => model.LateRegPenaltyType)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.LateRegPenaltyValue, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LateRegPenaltyValue)
+                    @Html.ValidationMessageFor(model => model.LateRegPenaltyValue)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
